@@ -3,25 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slides App</title>
+  <title>Markdown slides</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="toolbar">
-    <h1>Slides App</h1>
+    <h1>Markdown slides</h1>
     <div>
+    <span id="status"></span>
     <button id="saveBtn">Save</button>
       <button id="presentBtn">Present</button>
     </div>
   </header>
 
   <main class="workspace">
-    <!-- Section 1: Markdown editor -->
     <section class="pane editor-pane">
       <textarea id="editor" placeholder="Write your Markdown here. Use --- to separate slides."></textarea>
     </section>
-
-    <!-- Section 2: Live preview -->
     <section class="pane preview-pane">
       <div id="slideView" class="slide"></div>
 
@@ -33,7 +31,7 @@
       </div>
     </section>
   </main>
-
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

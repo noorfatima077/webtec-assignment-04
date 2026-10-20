@@ -103,3 +103,14 @@ button:disabled{
   opacity:0.4;
   cursor:not-allowed;
 }
+#status
+{
+  opacity:0;
+  margin-right:10px;
+  transition:opacity 0.3s;
+}
+
+#status.visible
+ {
+  opacity:1;
+}
